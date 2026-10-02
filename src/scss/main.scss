@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #c8ff00; /* Ваш салатовий колір */
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center; /* Центрування по горизонталі */
+  align-items: center;     /* Центрування по вертикалі */
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;  /* Ставить елементи вертикально (один під одним) */
+  align-items: center;     /* Центрує текст і картинку рівно по осі */
+  gap: 20px;               /* Відступ між написом і бананом */
+
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    text-align: center;
+  }
+
+  img {
+    width: 220px;          /* Акуратний невеликий розмір банана */
+    height: auto;
+    display: block;
+    mix-blend-mode: multiply; /* Прибирає білий прямокутник навколо банана */
+  }
+}
